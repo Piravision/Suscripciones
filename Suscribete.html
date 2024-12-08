@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscripciones</title>
+    <style>
+        /* Estilos de la cabecera */
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            flex-wrap: wrap;
+        }
+
+        .section-title {
+            flex: 1;
+            text-align: left;
+        }
+
+        .section-title h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .logo-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            height: 200px;
+            width: auto;
+        }
+
+        .social-icons {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilos del contenido central */
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .main-content img.central {
+            max-width: 100%;
+            height: auto;
+            width: 900px;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .subscription-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .subscription-buttons a img {
+            width: 300px;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .subscription-buttons a img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: center; /* Cambiado de flex-start a center */
+            }
+
+            .social-icons {
+                justify-content: center; /* Cambiado de flex-start a center */
+                margin-top: 10px;
+                width: 100%; /* Asegura que los iconos ocupen todo el ancho disponible */
+            }
+
+            .logo {
+                height: 150px; /* Reducido el tamaño del logo para pantallas pequeñas */
+            }
+
+            .main-content img.central {
+                width: 80%;
+            }
+
+            .subscription-buttons a img {
+                width: 150px;
+            }
+        }
+
+        /* Opcional: Ajustes adicionales para dispositivos muy pequeños */
+        @media (max-width: 480px) {
+            .logo {
+                height: 120px; /* Aún más pequeño en pantallas muy pequeñas */
+            }
+
+            .social-icons img {
+                width: 35px;
+                height: 35px;
+            }
+
+            .subscription-buttons a img {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <div class="header">
+        <div class="section-title">
+            <h1> </h1> <!-- Agregado el título para mantener la coherencia -->
+        </div>
+        <div class="logo-container">
+            <img src="https://cdn.streamelements.com/uploads/fa3fe2b3-134b-4288-bfef-29948befc05f.png" alt="Logo" class="logo">
+        </div>
+        <div class="social-icons">
+            <a href="https://www.twitch.tv/piravision" target="_blank">
+                <img src="https://cdn.streamelements.com/uploads/4e340b43-7b0e-4bad-81d4-197c233827c4.png" alt="Twitch">
+            </a>
+            <a href="https://kick.com/piravision" target="_blank">
+                <img src="https://cdn.streamelements.com/uploads/9e660f91-49cb-476f-b328-8a1e5d9706ae.png" alt="Kick">
+            </a>
+            <a href="https://discord.gg/7VEzeTy55R" target="_blank">
+                <img src="https://cdn.streamelements.com/uploads/e731c1a0-344f-432d-bbf8-0590844f7e25.png" alt="Discord">
+            </a>
+            <a href="https://x.com/PiraVision" target="_blank">
+                <img src="https://cdn.streamelements.com/uploads/aecdfafd-fb1e-41d7-91ff-cc7d5cb34a32.png" alt="X (Twitter)">
+            </a>
+            <a href="https://t.me/+UD7ZygM3MrlhNjg0" target="_blank">
+                <img src="https://cdn.streamelements.com/uploads/16594692-335f-470e-9beb-fd542023ec96.png" alt="Telegram">
+            </a>
+        </div>
+    </div>
+
+    <!-- Contenido Central -->
+    <div class="main-content">
+        <img src="https://cdn.streamelements.com/uploads/c0ae11cd-4ec7-4c1d-b194-b41d4b4cb394.png" alt="Contenido Central" class="central">
+        <p>¡Gracias por tu apoyo! Elige la plataforma en la que prefieres suscribirte para seguir disfrutando de contenido exclusivo y beneficios especiales. Puedes suscribirte a través de Twitch o Kick.</p>
+        <div class="subscription-buttons">
+            <a href="https://gaming.amazon.com/links/twitch/manage" target="_blank">
+                <img src="https://cdn.streamelements.com/uploads/4d98cfc3-5b16-40fa-a2b6-db1e6b923fdd.png" alt="Suscribirse en Twitch">
+            </a>
+            <a href="https://kick.com/piravision/about" target="_blank">
+                <img src="https://cdn.streamelements.com/uploads/6498e8e5-b2b7-4716-8f9b-f1cb5015e2ef.png" alt="Suscribirse en Kick">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
